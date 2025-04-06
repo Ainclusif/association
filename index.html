@@ -3,23 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Association Ain'clusif : des pieds au sens">
   <title>Ain'clusif : Des pieds au sens</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background: #4CAF50;
       color: white;
       padding: 1rem;
       text-align: center;
     }
+
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background: #4CAF50;
+    }
+
     section {
       margin: 20px;
       padding: 20px;
@@ -27,39 +45,59 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #4CAF50;
-    }
+
     footer {
-      margin-top: 20px;
       text-align: center;
       padding: 10px;
       background: #4CAF50;
       color: white;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Ain'clusif : Des pieds au sens</h1>
-    <p>Bienvenue sur le site officiel de notre association</p>
+    <p>L'inclusion par l'action, le sport et la culture.</p>
   </header>
 
-  <section>
-    <h2>À propos de nous</h2>
+  <!-- Barre de navigation -->
+  <nav>
+    <a href="#home">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#actions">Nos actions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Contenu des pages -->
+  <section id="home">
+    <h2>Accueil</h2>
+    <p>Bienvenue sur le site d'Ain'clusif ! Découvrez nos projets inclusifs et nos actions locales.</p>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
     <p>
-      L'association <strong>Ain'clusif : des pieds au sens</strong> œuvre pour l'inclusion sociale à travers des 
-      activités sportives, culturelles et éducatives dans la région de l'Ain.
+      Ain'clusif : Des pieds au sens est une association dédiée à l'inclusion des personnes 
+      de tous horizons dans des projets solidaires et humains.
     </p>
   </section>
 
-  <section>
+  <section id="actions">
     <h2>Nos actions</h2>
     <ul>
-      <li>Organisation d’événements inclusifs.</li>
-      <li>Ateliers de sensibilisation sur le handicap.</li>
-      <li>Randonnées et activités sportives adaptées.</li>
+      <li>Organisation d’événements sportifs adaptés.</li>
+      <li>Ateliers de sensibilisation sur la diversité.</li>
+      <li>Randonnées inclusives accessibles à tous.</li>
     </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>
+      Vous voulez en savoir plus ? Collaborer avec nous ? Contactez-nous à l’adresse suivante : <br />
+      <strong>association@ainclusif.fr</strong>
+    </p>
   </section>
 
   <footer>
